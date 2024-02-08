@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KitKat</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  .image-frame {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .image-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  .container {
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #fff;
+  background-color: rgba(250, 250, 250, 0.1);
+  box-shadow: 0 0 80px rgba(252, 252, 252, 0.3);
+  border-radius: 20px;
+  border: 2px solid rgba(236, 236, 236, 0.1);
+  backdrop-filter: blur(5px);
+  webkit-backdrop-filter: blur(50px);
+  }
+  h1 {
+    color: #ff0000;
+    text-shadow: 20px;
+  }
+  p {
+    color: #ffffff;
+    font-size: 20px;
+    font-style: oblique;
+    text-shadow: #f7f7f7 10px;
+  }
+  .proposal-button {
+    background-color: #d82b2b;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  .proposal-button:hover {
+    background-color: #c21a1a;
+  }
+</style>
+</head>
+<body>
+
+    <div class="image-frame">
+        <img src="image1.jpeg" alt="Image 1">
+        <img src="image2.jpeg" alt="Image 2">
+        <img src="image7.jpeg" alt="Image 3">
+        <img src="image4.jpeg" alt="Image 4">
+        <img src="image5.jpeg" alt="Image 5">
+        <img src="image6.jpeg" alt="Image 6">
+        <img src="image3.jpeg" alt="Image 7">
+        <img src="image8.jpeg" alt="Image 8">
+      </div>
+<div class="overlay">
+
+
+<div class="container">
+  <h1>Will You Be My KitKat?</h1>
+  <p>Life is like a KitKat, it's sweeter when shared with you. Will you be my partner in adventures and my confidant in secrets?</p>
+  <button class="proposal-button" onclick="propose()">Yes, I Will!</button>
+</div>
+</div>
+
+<script>
+  function propose() {
+    alert("Congratulations! You just made me the happiest person alive!");
+  }
+</script>
+
+</body>
+</html>
